@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.optim import Adam
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
-from losses import ConfidenceLoss
+from src.losses import ConfidenceLoss
 
 
 class ScorePredictor(nn.Module):
@@ -120,7 +120,7 @@ def test_score_predictor(
     
         plt.xlabel("rejection rate")
         plt.ylabel("accuracy")
-        plt.title("UE via topological featues")
+        plt.title("UE via topological features")
         plt.legend()
         plt.show()
 
